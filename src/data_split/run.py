@@ -65,6 +65,8 @@ def go(args):
             # W&B had a chance to upload the datasets, and the upload
             # might fail
             artifact.wait()
+    run.finish()
+            
 
 
 if __name__ == "__main__":
