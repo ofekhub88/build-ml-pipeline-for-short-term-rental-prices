@@ -5,31 +5,37 @@ on the price of similar properties. Your company receives new data in bulk every
 to be retrained with the same cadence, necessitating an end-to-end pipeline that can be reused.
 
 In this project you will build such a pipeline.
+## W&B project link
+  https://wandb.ai/ofekm88/nyc_airbnb?nw=nwuserofek88
+  
 
 ## Table of contents
 
-- [Introduction](#build-an-ML-Pipeline-for-Short-Term-Rental-Prices-in-NYC)
-- [Preliminary steps](#preliminary-steps)
-  * [Fork the Starter Kit](#fork-the-starter-kit)
-  * [Create environment](#create-environment)
-  * [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
-  * [Cookie cutter](#cookie-cutter)
-  * [The configuration](#the-configuration)
-  * [Running the entire pipeline or just a selection of steps](#Running-the-entire-pipeline-or-just-a-selection-of-steps)
-  * [Pre-existing components](#pre-existing-components)
-- [Instructions](#instructions)
-  * [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
-  * [Data cleaning](#data-cleaning)
-  * [Data testing](#data-testing)
-  * [Data splitting](#data-splitting)
-  * [Train Random Forest](#train-random-forest)
-  * [Optimize hyperparameters](#optimize-hyperparameters)
-  * [Select the best model](#select-the-best-model)
-  * [Test](#test)
-  * [Visualize the pipeline](#visualize-the-pipeline)
-  * [Release the pipeline](#release-the-pipeline)
-  * [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
-- [Cleaning up](#cleaning-up)
+- [Build an ML Pipeline for Short-Term Rental Prices in NYC](#build-an-ml-pipeline-for-short-term-rental-prices-in-nyc)
+  - [W\&B project link](#wb-project-link)
+  - [Table of contents](#table-of-contents)
+  - [Preliminary steps](#preliminary-steps)
+    - [Fork the Starter kit](#fork-the-starter-kit)
+    - [Create environment](#create-environment)
+    - [Get API key for Weights and Biases](#get-api-key-for-weights-and-biases)
+    - [Cookie cutter](#cookie-cutter)
+    - [The configuration](#the-configuration)
+    - [Running the entire pipeline or just a selection of steps](#running-the-entire-pipeline-or-just-a-selection-of-steps)
+    - [Pre-existing components](#pre-existing-components)
+  - [In case of errors](#in-case-of-errors)
+  - [Instructions](#instructions)
+    - [Exploratory Data Analysis (EDA)](#exploratory-data-analysis-eda)
+  - [Data cleaning](#data-cleaning)
+    - [Data testing](#data-testing)
+    - [Data splitting](#data-splitting)
+    - [Train Random Forest](#train-random-forest)
+    - [Optimize hyperparameters](#optimize-hyperparameters)
+    - [Select the best model](#select-the-best-model)
+    - [Test](#test)
+    - [Visualize the pipeline](#visualize-the-pipeline)
+    - [Release the pipeline](#release-the-pipeline)
+    - [Train the model on a new data sample](#train-the-model-on-a-new-data-sample)
+  - [License](#license)
 
 ## Preliminary steps
 ### Fork the Starter kit
