@@ -30,6 +30,8 @@ def go(args):
     idx = df["price"].between(args.min_price, args.max_price)
     df = df[idx].copy()
     # Convert last_review to datetime
+    idx = df['longitude'].between(-74.25, -73.50) & df['latitude'].between(40.5, 41.2)
+    df = df[idx].copy()
     df["last_review"] = pd.to_datetime(df["last_review"])
 
     logger.info(f"Save the cleaned file in W&B {args.output_artifact}")
@@ -42,6 +44,7 @@ def go(args):
             type=args.output_type,
             description=args.output_description,
         )
+
         artifact.add_file(temp_path)
         run.log_artifact(artifact)
         # This waits for the artifact to be uploaded to W&B. If you
