@@ -5,7 +5,7 @@ entry_points:
   main:
     parameters:
 
-      parameter1:
+      input_file:
         description: ## ADD DESCRIPTION
         type: string
 

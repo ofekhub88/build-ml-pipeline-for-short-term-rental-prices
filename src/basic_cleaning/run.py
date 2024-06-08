@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 """
-An example of a step using MLflow and Weights & Biases
+An example of a step using MLflow and Weights & Biases]: Download from W&B the raw dataset and apply some basic data cleaning, exporting the result to a new artifact
 """
 import argparse
 import logging
@@ -27,18 +27,46 @@ def go(args):
 
 if __name__ == "__main__":
 
-    parser = argparse.ArgumentParser(description="This steps cleans the data")
+    parser = argparse.ArgumentParser(description="A very basic data cleaning")
 
 
     parser.add_argument(
-        "--parameter1", 
+        "--input_artifact", 
         type=## INSERT TYPE HERE: str, float or int,
         help=## INSERT DESCRIPTION HERE,
         required=True
     )
 
     parser.add_argument(
-        "--parameter2", 
+        "--output_artifact", 
+        type=## INSERT TYPE HERE: str, float or int,
+        help=## INSERT DESCRIPTION HERE,
+        required=True
+    )
+
+    parser.add_argument(
+        "--output_type", 
+        type=## INSERT TYPE HERE: str, float or int,
+        help=## INSERT DESCRIPTION HERE,
+        required=True
+    )
+
+    parser.add_argument(
+        "--output_description", 
+        type=## INSERT TYPE HERE: str, float or int,
+        help=## INSERT DESCRIPTION HERE,
+        required=True
+    )
+
+    parser.add_argument(
+        "--min_price", 
+        type=## INSERT TYPE HERE: str, float or int,
+        help=## INSERT DESCRIPTION HERE,
+        required=True
+    )
+
+    parser.add_argument(
+        "--max_price", 
         type=## INSERT TYPE HERE: str, float or int,
         help=## INSERT DESCRIPTION HERE,
         required=True
