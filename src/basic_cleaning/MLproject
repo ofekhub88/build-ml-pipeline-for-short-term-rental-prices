@@ -5,14 +5,30 @@ entry_points:
   main:
     parameters:
 
-      input_file:
-        description: ## ADD DESCRIPTION
+      input_artifact:
+        description: input artifact name  after EDA 
         type: string
 
-      parameter2:
-        description: ## ADD DESCRIPTION
+      output_artifact:
+        description: output artifact name   
         type: string
+
+      output_type:
+        description:  output artifact 
+        type: string
+
+      output_description:
+        description: aoutput  artifact  description for w&b parametrs 
+        type: string
+
+      min_price:
+        description: minumum price for outliers data
+        type: float
+
+      max_price:
+        description: Maximum price for outliers data
+        type: float
 
 
     command: >-
-        python run.py  --parameter1 {parameter1}  --parameter2 {parameter2} 
+        python run.py  --input_artifact {input_artifact}  --output_artifact {output_artifact}  --output_type {output_type}  --output_description {output_description}  --min_price {min_price}  --max_price {max_price} 
